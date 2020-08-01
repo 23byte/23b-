@@ -1,0 +1,165 @@
+body
+{
+    margin: 0;
+    padding: 0;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
+    background: #43cea2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-width: 900px;
+}
+
+
+.login-box
+{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    min-width: 350px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: #060c21;
+    background-color: #0b8793;
+    
+
+    background: -webkit-linear-gradient(to 20deg, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to 20deg, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+}
+
+.login-box:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #ffffff;
+    z-index: -1;
+}
+.login-box::after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #ffffff;
+    z-index: -2;
+    filter: blur(40px);
+}
+.login-box:before,
+.login-box:after
+{
+    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+}
+
+.login-box h1{
+    -webkit-user-select: none;
+    letter-spacing: 5px;
+}
+
+.login-box .input-box
+{
+    margin: 0 15px;
+    /* margin-bottom: 0; */
+    line-height: 30px;
+    /* background-color: red; */
+    
+}
+.login-box .input-box input
+{
+    border: none;
+    height: 30px;
+    width: 200px;
+    border-bottom: #fff 2px solid;
+    outline: none;
+    background: none;
+    transition:  0.2s ease;
+    font-size: 14px;
+}
+.login-box .input-box input:focus
+{
+    padding-right: 20px;
+}
+input::-webkit-input-placeholder
+{
+    color: lightgray;
+}
+
+.login-box button
+{
+   margin-top:  15px;
+   height: 40px;
+   width: 150px;
+   border-radius: 8px;
+   
+
+background: none;
+    border: 2px solid #fff;
+
+
+   font-weight: bold;
+   color: #053E44;
+
+   
+   outline: none;
+   transition:0.25s ease-in-out ;
+
+}
+.login-box button:active
+{
+    width: 160px;
+    transition:  0.1s ease;
+}
+.login-box button:hover
+{
+    background: none;
+    border: 2px solid #fff;
+
+    background-color: #fff;
+border: none;
+}
+
+
+
+.input-err
+{
+    user-select: none;
+    /* display: none; */
+    width: 200px;
+    height: 20px;
+    /* padding-left:20px ; */
+    color: #FFF5EE;
+    font-size: 12px;
+    /* border: 1px solid white; */
+    margin: 0 auto;
+}
+
+
+.sign
+{
+
+    user-select: none;
+    width: 130px;
+    margin:0 auto;
+
+    position: relative;
+
+   z-index: 1;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- author:23byte -->
+    <!-- date:2020.07.24 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="iconfonts/iconfont.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="content">
+    <img src="img/logo.png" alt="">
+    <div class="login-box">    
+               
+        <form action="home.html" method="POST" id="loginForm">
+            <h1>登录</h1>
+            <div class="input-box">
+                <span class="iconfont icon-user"></span>
+                <input class="" autocomplete='off' type="text" name="username" id="username" placeholder="请输入账号">
+                <div class="input-err">  </div>
+            </div>
+
+            <div class="input-box">
+                <span class="iconfont icon-mima"></span>
+                <input autocomplete='off' type="password" name="password" id="password" placeholder="请输入密码">
+                <div class="input-err"> </div>
+            </div>
+            
+            <button id="login"  >立即登录</button>
+        </form>
+
+        <p>测试阶段  账号:admin 密码:123456</p>
+        <div class="sign" style="margin-top: 10px;">
+            <i class="fa fa-github"></i>
+            <span>23byte个人站</span>
+        </div>  
+        
+
+    </div>
+</div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
